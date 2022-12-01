@@ -32,6 +32,14 @@ class HomePage extends StatelessWidget {
                   color: Color.fromRGBO(107, 172, 226, 1),
                 ),
               ),
+              const Text(
+                'Masters Student @ IGDTUW, New Delhi',
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  fontSize: 15.0,
+                  color: Color.fromRGBO(107, 172, 226, 1),
+                ),
+              ),
               GestureDetector(
                 onTap: () {
                   Navigator.pushNamed(context, 'about');
@@ -52,7 +60,7 @@ class HomePage extends StatelessWidget {
                         width: 15,
                       ),
                       Text(
-                        'About Me',
+                        'My Projects',
                         textAlign: TextAlign.center,
                       ),
                     ],

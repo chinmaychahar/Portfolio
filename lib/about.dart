@@ -19,7 +19,7 @@ class AboutPage extends StatelessWidget {
           appBar: AppBar(
             backgroundColor: Colors.blue[300],
             title: const Text(
-              'About Me',
+              'My Projects',
               style: TextStyle(
                 fontSize: 20,
                 color: Colors.black,
@@ -52,7 +52,25 @@ class AboutPage extends StatelessWidget {
               GestureDetector(
                 onTap: () {
                   final Uri _url =
-                      Uri.parse('https://github.com/chinmayayy/HackDSC');
+                      Uri.parse('https://github.com/chinmaychahar/OCR');
+                  _launchUrl(_url);
+                },
+                child: Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Card(
+                    child: ListTile(
+                      title: Text('IMReader Tool'),
+                      subtitle: Text(
+                          'A tool that uses OCR with text to speech conversion using Tesseract.js and React Speech Kit for accessible image processing'),
+                      trailing: Icon(Icons.link),
+                    ),
+                  ),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  final Uri _url =
+                      Uri.parse('https://github.com/chinmaychahar/HackDSC');
                   _launchUrl(_url);
                 },
                 child: Padding(
@@ -70,7 +88,7 @@ class AboutPage extends StatelessWidget {
               GestureDetector(
                 onTap: () {
                   final Uri _url =
-                      Uri.parse('https://github.com/chinmayayy/SnapSun');
+                      Uri.parse('https://github.com/chinmaychahar/SnapSun');
                   _launchUrl(_url);
                 },
                 child: Padding(
@@ -88,7 +106,7 @@ class AboutPage extends StatelessWidget {
               GestureDetector(
                 onTap: () {
                   final Uri _url =
-                      Uri.parse('https://github.com/chinmayayy/Benevole');
+                      Uri.parse('https://github.com/chinmaychahar/Benevole');
                   _launchUrl(_url);
                 },
                 child: Padding(
@@ -126,7 +144,7 @@ class AboutPage extends StatelessWidget {
               GestureDetector(
                 onTap: () {
                   final Uri _url = Uri.parse(
-                      'https://github.com/chinmayayy/Hostile-News-Classification');
+                      'https://github.com/chinmaychahar/Hostile-News-Classification');
                   _launchUrl(_url);
                 },
                 child: Padding(
